@@ -5,8 +5,6 @@ const auth = require('json-server-auth');
 const middlewares = jsonServer.defaults()
 
 
-
-
 server.use(middlewares);
 // Add this before server.use(router)
 server.use(
@@ -24,21 +22,21 @@ server.listen(3000, () => {
 // Export the Server API
 module.exports = server;
 
-const app = jsonServer.create();
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
+// const app = jsonServer.create();
+// const router = jsonServer.router(path.join(__dirname, 'db.json'));
 
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 8080;
 
-const rules = auth.rewriter(JSON.parse(fs.readFileSync(path.join(__dirname, 'routes.json'))));
+// const rules = auth.rewriter(JSON.parse(fs.readFileSync(path.join(__dirname, 'routes.json'))));
 
-// /!\ Bind the router db to the app
-app.db = router.db
+// // /!\ Bind the router db to the app
+// app.db = router.db
 
-// You must apply the auth middleware before the router
-app.use(middlewares);
-app.use(rules);
-app.use(auth);
-app.use(router);
-app.listen(port, () => {
-    console.log(`JSON Server is running in ${port}`);
-});
+// // You must apply the auth middleware before the router
+// app.use(middlewares);
+// app.use(rules);
+// app.use(auth);
+// app.use(router);
+// app.listen(port, () => {
+//     console.log(`JSON Server is running in ${port}`);
+// });
