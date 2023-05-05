@@ -1,107 +1,194 @@
 {
-  "orders": [	
-    {	
-      "id": 1,	
-      "userId": 1,	
-      "client": "Jude Milhon",	
-      "products": [	
-        {	
-          "qty": 1,	
-          "product": {	
-            "id": 1,	
-            "name": "Sandwich de jamón y queso",	
-            "price": 1000,	
-            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/sandwich.jpg",	
-            "type": "Desayuno",	
-            "dateEntry": "2022-03-05 15:14:10"	
-          }	
-        },	
-        {	
-          "qty": 1,	
-          "product": {	
-            "id": 2,	
-            "name": "Café americano",	
-            "price": 500,	
-            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/coffe.jpg",	
-            "type": "Desayuno",	
-            "dateEntry": "2022-03-05 15:14:10"	
-          }	
-        }	
-      ],	
-      "status": "pending",	
-      "dataEntry": "2022-03-05 15:00"	
-    },	
-    {	
-      "id": 2,	
-      "userId": 2,	
-      "client": "Katie Bouman",	
-      "products": [	
-        {	
-          "qty": 2,	
-          "product": {	
-            "id": 2,	
-            "name": "Café americano",	
-            "price": 500,	
-            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/coffe.jpg",	
-            "type": "Desayuno",	
-            "dateEntry": "2022-03-05 15:14:10"	
-          }	
-        },	
-        {	
-          "qty": 1,	
-          "product": {	
-            "id": 3,	
-            "name": "Agua 500ml",	
-            "price": 500,	
-            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/water.jpg",	
-            "type": "Almuerzo",	
-            "dateEntry": "2022-03-05 15:14:10"	
-          }	
-        }	
-      ],	
-      "status": "delivered",	
-      "dataEntry": "2022-03-05 15:00",	
-      "dateProcessed": "2022-03-05 16:00"	
-    }	
-  ],	
-  "products": [	
-    {	
-      "id": 1,	
-      "name": "Sandwich de jamón y queso",	
-      "price": 1000,	
-      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/sandwich.png",	
-      "type": "Desayuno",	
-      "dateEntry": "2022-03-05 15:14:10"	
-    },	
-    {	
-      "id": 2,	
-      "name": "Café americano",	
-      "price": 500,	
-      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/coffee.png",	
-      "type": "Desayuno",	
-      "dateEntry": "2022-03-05 15:14:10"	
-    },	
-    {	
-      "id": 3,	
-      "name": "Agua 500ml",	
-      "price": 500,	
-      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/water.png",	
-      "type": "Almuerzo",	
-      "dateEntry": "2022-03-05 15:14:10"	
-    }	
-  ],	
-  "users": [	
-    {	
-      "email": "anita.borg@systers.xyz",	
-      "password": "$2a$10$gVkmcWdnwEBxXj2PWjuv9uDx7BfjiAobbabDAOrH2o8b1i3E7KwR.",	
-      "role": "admin",	
-      "id": 1	
-    },	
-    {	
-      "email": "grace.hopper@systers.xyz",	
-      "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",	
-      "role": "admin",	
-      "id": 2	
-    }	
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "client": "Jude Milhon",
+      "products": [
+        {
+          "qty": 1,
+          "product": {
+            "id": 1,
+            "name": "Sandwich de jamón y queso",
+            "price": 1000,
+            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/sandwich.jpg",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        },
+        {
+          "qty": 1,
+          "product": {
+            "id": 2,
+            "name": "Café americano",
+            "price": 500,
+            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/coffe.jpg",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        }
+      ],
+      "status": "pending",
+      "dataEntry": "2022-03-05 15:00"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "client": "Katie Bouman",
+      "products": [
+        {
+          "qty": 2,
+          "product": {
+            "id": 2,
+            "name": "Café americano",
+            "price": 500,
+            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/coffe.jpg",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        },
+        {
+          "qty": 1,
+          "product": {
+            "id": 3,
+            "name": "Agua 500ml",
+            "price": 500,
+            "image": "https://github.com/Laboratoria/bootcamp/tree/main/projects/04-burger-queen-api/resources/images/water.jpg",
+            "type": "Almuerzo",
+            "dateEntry": "2022-03-05 15:14:10"
+          }
+        }
+      ],
+      "status": "delivered",
+      "dataEntry": "2022-03-05 15:00",
+      "dateProcessed": "2022-03-05 16:00"
+    },
+    {
+      "userId": "2",
+      "client": "Luna",
+      "products": [
+        {
+          "product": {
+            "id": 2,
+            "name": "Café americano",
+            "price": 500,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/coffee.png",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": 1,
+            "name": "Sandwich de jamón y queso",
+            "price": 1000,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/sandwich.png",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          },
+          "quantity": 1
+        }
+      ],
+      "status": "Delivered",
+      "dataEntry": "2023-05-04T20:29:15.205Z",
+      "total": 1500,
+      "id": 3,
+      "dateProcessed": "2023-05-04T20:29:55.717Z",
+      "time": 0.6752
+    },
+    {
+      "userId": "3",
+      "client": "Angie",
+      "products": [
+        {
+          "product": {
+            "id": 1,
+            "name": "Sandwich de jamón y queso",
+            "price": 1000,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/sandwich.png",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": 2,
+            "name": "Café americano",
+            "price": 500,
+            "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/coffee.png",
+            "type": "Desayuno",
+            "dateEntry": "2022-03-05 15:14:10"
+          },
+          "quantity": 2
+        }
+      ],
+      "status": "Cooked",
+      "dataEntry": "2023-05-05T00:29:16.590Z",
+      "total": 3000,
+      "id": 4,
+      "dateProcessed": "2023-05-05T00:29:45.031Z",
+      "time": 0.47401666666666664
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Sandwich de jamón y queso",
+      "price": 1000,
+      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/sandwich.png",
+      "type": "Desayuno",
+      "dateEntry": "2022-03-05 15:14:10"
+    },
+    {
+      "id": 2,
+      "name": "Café americano",
+      "price": 500,
+      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/coffee.png",
+      "type": "Desayuno",
+      "dateEntry": "2022-03-05 15:14:10"
+    },
+    {
+      "id": 3,
+      "name": "Agua 500ml",
+      "price": 500,
+      "image": "https://raw.githubusercontent.com/ssinuco/burger-queen-api-mock/main/resources/images/water.png",
+      "type": "Almuerzo",
+      "dateEntry": "2022-03-05 15:14:10"
+    },
+    {
+      "name": "Pizza",
+      "price": 15,
+      "image": "https://slicelife.imgix.net/15041/photos/original/SlicePizza_Veggie.jpg?auto=compress&auto=format",
+      "type": "Almuerzo",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "email": "anita.borg@systers.xyz",
+      "password": "$2a$10$gVkmcWdnwEBxXj2PWjuv9uDx7BfjiAobbabDAOrH2o8b1i3E7KwR.",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "grace.hopper@systers.xyz",
+      "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "server@burger.queen",
+      "password": "$2a$10$6vHmoH2LdPucxz.mXSrr2.LmTIYqQ6MnusuZHSkY2zfo2TvtOLMmK",
+      "role": "server",
+      "id": 3
+    },
+    {
+      "email": "cook@burger.queen",
+      "password": "$2a$10$G4yEfSSREqMJT.F.UxmVq.rAeMDE/iJ/CziKfsTpJ0dL1m0xp3AFq",
+      "role": "cook",
+      "id": 4
+    }
   ]
 }
