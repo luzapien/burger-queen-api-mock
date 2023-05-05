@@ -6,6 +6,8 @@ const middlewares = jsonServer.defaults()
 
 const app = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, '/tmp/db.json'));
+const filePath = path.join("/tmp", "data.json");
+fs.writeFileSync(filePath, JSON.stringify(data));
 
 const port = process.env.PORT || 8080;
 
